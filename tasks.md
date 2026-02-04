@@ -26,3 +26,5 @@ Loop:
     14. append the result in ./results.csv file with pr file name, patch file name, success (true/false), error message (if any), and process next line
     
 
+# 3. Principles
+    DO NOT ASK ME ANY THING, JUST DO IT.
