@@ -13,7 +13,7 @@ follow the steps below:
     4. if the repo is not cloned, clone the repo under the repos folder and remove other repo folders
     5. rebase to the commit hash in step 3
     6. run the tests in project if exists, records the failed tests records.
-    7. fix or refactor the code following the pr description.
+    7. give your solutions for the issue and fix or refactor the code following the pr description,DO NOT REFER to the origin "fix_patch" in the pr.
     8. run all the tests in the projects again if exists. if failed the failed number is greater than step 6, go back to step 7 ,max retry 10 times, if exceed the max retry, go to step 14.
     9. if the pr has "test_patch" field, extract the test patch and try to apply it.
     10. run the tests just applied, if failed, go back to step 7, ,max retry 10 times, if exceed the max retry, go to step 14.
