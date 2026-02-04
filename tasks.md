@@ -4,8 +4,8 @@ the goal of this project is to load and fix issues from github repo
 # 2.steps
 
 You are giving a json file with multiple lines(SKIP the hidden files,name started with "." or "._"), each line represents a pr data from a github repo, your role is a professional software engineer, you should read the pr data and fix the issue.
-for each line:
-  follow the steps below:
+Loop: 
+  read a line and follow the steps below:
     0. MUST DO: check the patches folder, if the patch <org>_<repo>_<pr_number>.diff or <org>__<repo>__<pr_number>.diff already exists, skip this line
     1. extract and analyze the pr body and title
     2. extract and analyze the related issues if exists
@@ -23,6 +23,6 @@ for each line:
         12.2 run analyze_patch.sh <org>_<repo>_<pr_number>_tmp.json to get the score and grade
         12.3 append it to patch_scores.csv file with patch file name, score, grade
     13. extract the origin patch from pr and save to ./origin_patches folder, the file name MUST BE <org>_<repo>_<pr_number>.diff
-    14. append the result in ./results.csv file with pr file name, patch file name, success (true/false), error message (if any)
-    15. do next line
+    14. append the result in ./results.csv file with pr file name, patch file name, success (true/false), error message (if any), and process next line
+    
 
